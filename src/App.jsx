@@ -1,4 +1,4 @@
-import DataCard from "./component/DataCard";
+import DateCard from "./component/DateCard";
 import DateData from "./date.json";
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
         <li className="w-32 h-32"></li>
         <li className="w-32 h-32"></li>
         {DateData.map((v, i) => {
-          return <DataCard key={i} date={v.date} todos={v.todos} />;
+          return <DateCard key={i} date={v.date} todos={v.todos} />;
         })}
       </ul>
     </div>
